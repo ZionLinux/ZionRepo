@@ -9,5 +9,4 @@ git commit -m "$input"
 git push -u origin master
 
 echo "Pushed!"
-sleep 2
-exit
+sleep 5
