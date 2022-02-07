@@ -1,12 +1,16 @@
 #!/bin/bash
 
-git add .
+git pull
+
+git add --all .
 
 echo "Please write your commit message."
 read input
 
 git commit -m "$input"
-git push -u origin master
+
+sleep 0.5
+
+git push --all origin master
 
 echo "Pushed!"
-sleep 5
